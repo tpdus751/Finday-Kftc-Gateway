@@ -40,6 +40,7 @@ Finday 서버로부터의 요청을 각 은행 서버로 중계하여 **계좌, 
 <img width="1183" height="97" alt="image" src="https://github.com/user-attachments/assets/eb69043e-ee47-4480-8a51-7a559e0c7d5b" />
 - `POST /gateway/transfer`  
   → 이체 요청 처리 (출금 → 입금)
+<br>
 
 <img width="1186" height="95" alt="image" src="https://github.com/user-attachments/assets/3722d053-a67d-4079-910a-a34520e6d4e2" />
 - `POST /gateway/pay/intergrated-method`  
