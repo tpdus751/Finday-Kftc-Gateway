@@ -25,7 +25,7 @@
 이 서버는 Finday 프로젝트의 MSA 아키텍처에서 **가상의 금융결제원(Gateway)** 역할을 수행합니다.  
 Finday 서버로부터의 요청을 각 은행 서버로 중계하여 **계좌, 카드, 거래, 이체, 결제** 등 다양한 금융 기능을 통합 제공합니다.
 
-### 주요 기능
+## 주요 기능
 
 | 구분 | 설명 |
 |------|------|
@@ -35,7 +35,7 @@ Finday 서버로부터의 요청을 각 은행 서버로 중계하여 **계좌, 
 | **계좌 이체 처리** | 송신자 은행 출금 → 수신자 은행 입금 요청을 순차 처리 |
 | **결제 요청 처리** | Finday Pay 기능으로 계좌/카드를 통한 통합 결제 수행 |
 
-### 제공 중인 API 목록 (Swagger 기준)
+## 제공 중인 API 목록 (Swagger 기준)
 
 <img width="1183" height="97" alt="image" src="https://github.com/user-attachments/assets/eb69043e-ee47-4480-8a51-7a559e0c7d5b" />
 - `POST /gateway/transfer`  
@@ -65,7 +65,7 @@ Finday 서버로부터의 요청을 각 은행 서버로 중계하여 **계좌, 
 - `GET /gateway/transaction/latest30days`  
   → 최근 30일 거래 내역 조회
 
-## ⚙️ application.yml 예시
+## application.yml
 
 ```yaml
 server:
