@@ -8,7 +8,7 @@
 
 | 분류 | 기술 | 설명 |
 |------|------|------|
-| **Language** | Java 17 | 안정성과 최신 문법을 모두 갖춘 백엔드 개발용 JVM 언어 |
+| **Language** | Java 17 | 안정성과 최신 문법을 모두 갖춘 백엔드 개발용 JVM 언어 |ㅃ
 | **Framework** | Spring Boot 3.x | 빠른 설정과 강력한 생태계를 가진 자바 백엔드 프레임워크 |
 | **Build Tool** | Gradle | 의존성 관리 및 빌드를 자동화하는 빌드 도구 |
 | **REST API** | Spring Web | RESTful API 개발을 위한 HTTP 요청/응답 처리 모듈 |
@@ -64,3 +64,48 @@ Finday 서버로부터의 요청을 각 은행 서버로 중계하여 **계좌, 
 <img width="1220" height="1019" alt="image" src="https://github.com/user-attachments/assets/de8c0e09-3a15-4dad-b321-afd41019ab1c" />
 - `GET /gateway/transaction/latest30days`  
   → 최근 30일 거래 내역 조회
+
+## ⚙️ application.yml 예시
+
+```yaml
+server:
+  port: 8085  # 중계 서버(Gateway)의 실행 포트
+
+bank:
+  kookmin:
+    url: http://localhost:8090
+  shinhan:
+    url: http://localhost:8091
+  hana:
+    url: http://localhost:8092
+  woori:
+    url: http://localhost:8093
+  nh:
+    url: http://localhost:8094
+  sc:
+    url: http://localhost:8095
+  kakao:
+    url: http://localhost:8096
+  k:
+    url: http://localhost:8097
+  toss:
+    url: http://localhost:8098
+  # 각 가상 은행 서버의 API URL을 정의합니다.
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html  # Swagger UI 접속 경로 설정
+
+spring:
+  main:
+    allow-bean-definition-overriding: true  # 동일한 이름의 빈 등록 허용 (모듈 간 충돌 방지 목적)
+```
+
+## 관련 레포지토리
+
+| 서비스 | 레포지토리 |
+|--------|-------------|
+| 🌐 Finday 프론트엔드 | [`finday-frontend`](https://github.com/your-username/finday-frontend) |
+| 🧠 Finday 백엔드 | [`finday-backend`](https://github.com/your-username/finday-backend) |
+| 💳 국민은행 서버 | [`finday-bank-kb`](https://github.com/your-username/finday-bank-kb) |
+| 💳 신한은행 서버 | [`finday-bank-shinhan`](https://github.com/your-username/finday-bank-shinhan) |
