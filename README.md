@@ -39,32 +39,38 @@ Finday 서버로부터의 요청을 각 은행 서버로 중계하여 **계좌, 
 
 <img width="1183" height="97" alt="image" src="https://github.com/user-attachments/assets/eb69043e-ee47-4480-8a51-7a559e0c7d5b" />
 - `POST /gateway/transfer`  
-  → 이체 요청 처리 (출금 → 입금)
-<br>
+  → 이체 요청 처리 (출금 → 입금)<br>
+  
 
 <img width="1186" height="95" alt="image" src="https://github.com/user-attachments/assets/3722d053-a67d-4079-910a-a34520e6d4e2" />
 - `POST /gateway/pay/intergrated-method`  
   → 통합 결제 요청 (계좌 또는 카드 기반)
 
+
 <img width="1373" height="1023" alt="image" src="https://github.com/user-attachments/assets/1bea0c47-87d6-4c0c-b32b-973194fdc927" />
 - `GET /gateway/cards/list`  
   → 사용자 연동 카드 목록 조회
+
 
 <img width="1378" height="874" alt="image" src="https://github.com/user-attachments/assets/4fa7f420-33a0-44c4-bbb4-659540bdeecf" />
 - `GET /gateway/accounts/all`  
   → 전체 연동 계좌 통합 조회
 
+
 <img width="1383" height="1027" alt="image" src="https://github.com/user-attachments/assets/3842a761-8aba-475b-b570-a7dde947f603" />
 - `GET /gateway/accounts/list`  
   → 특정 은행의 계좌 조회
+
   
 <img width="1233" height="1032" alt="image" src="https://github.com/user-attachments/assets/cf839f7b-6438-4e0a-9cf1-ff9136ba4ab7" />
 - `GET /gateway/transaction/month`  
   → 월별 거래 내역 조회
 
+
 <img width="1220" height="1019" alt="image" src="https://github.com/user-attachments/assets/de8c0e09-3a15-4dad-b321-afd41019ab1c" />
 - `GET /gateway/transaction/latest30days`  
   → 최근 30일 거래 내역 조회
+
 
 ## application.yml
 
