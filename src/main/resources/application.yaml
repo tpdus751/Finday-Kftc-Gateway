@@ -1,0 +1,30 @@
+server:
+  port: 8085
+
+bank:
+  kookmin:
+    url: http://localhost:8090
+  shinhan:
+    url: http://localhost:8091
+  hana:
+    url: http://localhost:8092
+  woori:
+    url: http://localhost:8093
+  nh:
+    url: http://localhost:8094
+  sc:
+    url: http://localhost:8095
+  kakao:
+    url: http://localhost:8096
+  k:
+    url: http://localhost:8097
+  toss:
+    url: http://localhost:8098
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
